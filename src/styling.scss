@@ -1,0 +1,20 @@
+//Pages
+@import url('./styling/pages/main.scss');
+
+//Components
+@import url('./styling/components/footer.scss');
+@import url('./styling/components/nav.scss');
+@import url('./styling/components/heroes.scss');
+
+//Public
+@import url('./styling/themes.scss');
+
+//
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
