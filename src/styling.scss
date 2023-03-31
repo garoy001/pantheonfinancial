@@ -8,13 +8,14 @@
 
 //Public
 @import url('./styling/themes.scss');
+@import url('./styling/components/yoink.scss');
 
 //
 html {
 	scroll-behavior: smooth;
 }
 body {
-	background-color: black;
+	background-color: #262626;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 }

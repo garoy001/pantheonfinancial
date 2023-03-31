@@ -1,4 +1,5 @@
 import logo from '../media/pf_wordmark_white.svg';
+
 export const Nav = () => {
 	return (
 		<nav
@@ -57,6 +58,15 @@ export const Nav = () => {
 							<a
 								className="nav-link active nav-link-text"
 								aria-current="page"
+								href="#partners"
+							>
+								Our Partners
+							</a>
+						</li>
+						<li className="nav-item">
+							<a
+								className="nav-link active nav-link-text"
+								aria-current="page"
 								href="#insights"
 							>
 								Our Insights
@@ -73,7 +83,13 @@ export const Nav = () => {
 						</li>
 					</ul>
 					<div className="d-lg-flex  justify-content-lg-end">
-						<button className="btn btn-secondary login-btn">Login</button>
+						<a
+							rel="noopener noreferrer"
+							href="https://pantheon.formidium.com/login"
+							target={'_blank'}
+						>
+							<button className="btn btn-secondary login-btn">Login</button>
+						</a>
 					</div>
 				</div>
 			</div>
