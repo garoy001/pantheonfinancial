@@ -73,7 +73,7 @@ export const HeroCenterScreenshot = (props) => {
 };
 export const HeroLeftImage = (props) => {
 	return (
-		<div class="container col-12 px-4 py-5">
+		<div class="container col-12  py-5">
 			<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
 				<div class="col-6 side-image-box" style={{ height: '40rem' }}>
 					<div className="side-image-wrapper"></div>

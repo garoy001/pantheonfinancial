@@ -74,6 +74,7 @@ export const Nav = () => {
 						</li>
 						<li className="nav-item">
 							<a
+								id="contact_link"
 								className="nav-link active nav-link-text"
 								aria-current="page"
 								href="#contact"
