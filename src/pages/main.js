@@ -2,7 +2,6 @@ import {
 	HeroDivider,
 	HeroCenter,
 	HeroCenter2,
-	HeroCenter3,
 	HeroCenterScreenshot,
 	HeroLeftImage,
 	HeroVertCenteredForm,
@@ -12,9 +11,9 @@ import {
 } from '../components/heroes';
 import { Nav } from '../components/nav';
 import { HiOutlineArrowDown } from 'react-icons/hi';
-import { SectionHead } from '../components/sectionHead';
+import { SectionHead, SectionHead2 } from '../components/sectionHead';
 import logoCropped from '../media/pantheonlogo-cropped.png';
-import stocksImg from '../media/stockschart.jpg';
+
 import businessImg from '../media/businesstable.avif';
 import Fade from 'react-reveal/Fade';
 import larry from '../media/larryheadshot.png';
@@ -24,6 +23,7 @@ import brand2 from '../media/brand2.png';
 import brand3 from '../media/brand3.png';
 import brand4 from '../media/brand4.png';
 import brand5 from '../media/brand5.png';
+import { Footer } from '../components/footer';
 
 export const Main = () => {
 	return (
@@ -289,7 +289,6 @@ export const Main = () => {
 						<Fade>
 							<SectionHead sectionTitle="Our Partners" />
 						</Fade>
-
 						<HeroCenter2
 							classAdd="second-centered-hero hero-override"
 							textContent={
@@ -333,110 +332,102 @@ export const Main = () => {
 					<div className="d-example-divider"></div>
 					<section id="insights">
 						<SectionHead sectionTitle="Our Insights" />
-						<div id="insights" className="section-2 wf-section">
-							<div class="slider-container">
-								<div class="slider-wrapper">
-									<div
-										data-delay="4000"
-										data-animation="slide"
-										class="slider-3 w-slider"
-										data-autoplay="false"
-										data-easing="ease"
-										data-hide-arrows="true"
-										data-disable-swipe="false"
-										data-autoplay-limit="0"
-										data-nav-spacing="3"
-										data-duration="500"
-										data-infinite="false"
-									>
-										<div class="mask-2 w-slider-mask">
-											<div class="slide-2 w-slide">
-												<div class="slide-content-wrapper">
-													<div
-														style={{ paddingTop: '56.17021276595745%' }}
-														class="w-embed-youtubevideo youtube"
-													>
-														<iframe
-															src="https://www.youtube.com/embed/SH2CGAlh6Mc?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
-															frameborder="0"
-															style={{
-																position: 'absolute',
-																left: 0,
-																top: 0,
-																width: '100%',
-																height: '100%',
-																pointerEvents: ' auto',
-															}}
-															allow="autoplay; encrypted-media"
-															allowfullscreen=""
-															title="Pantheon Town Hall May 2022"
-														></iframe>
-													</div>
+						<HeroCenter2
+							classAdd="second-centered-hero hero-override"
+							textContent={
+								<div className="hero-partners-wrapper">
+									<div className="partner-container">
+										<div
+											id="insightsCarousel"
+											class="carousel slide "
+											data-ride="carousel"
+											data-interval="false"
+										>
+											<ol class="carousel-indicators">
+												<li
+													data-target="#insightsCarousel"
+													data-slide-to="0"
+													class="active"
+												></li>
+												<li
+													data-target="#insightsCarousel"
+													data-slide-to="1"
+												></li>
+												<li
+													data-target="#insightsCarousel"
+													data-slide-to="2"
+												></li>
+											</ol>
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<iframe
+														width="600"
+														height="337"
+														src="https://www.youtube.com/embed/SH2CGAlh6Mc"
+														title="Pantheon Town Hall May 2022"
+														frameborder="0"
+														allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+														allowfullscreen
+													></iframe>
+												</div>
+												<div class="carousel-item">
+													<iframe
+														width="600"
+														height="337"
+														src="https://www.youtube.com/embed/1YyAzVmP9xQ"
+														title="Cryptocurrency In 5 Minutes | Cryptocurrency Explained | What Is Cryptocurrency? | Simplilearn"
+														frameborder="0"
+														allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+														allowfullscreen
+													></iframe>
+												</div>
+												<div class="carousel-item">
+													<iframe
+														width="600"
+														height="337"
+														src="https://www.youtube.com/embed/nHhAEkG1y2U"
+														title="What is Web 3.0? (Explained with Animations)"
+														frameborder="0"
+														allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+														allowfullscreen
+													></iframe>
 												</div>
 											</div>
-											<div class="slide-2 w-slide">
-												<div class="slide-content-wrapper">
-													<div
-														style={{ paddingTop: '56.17021276595745%' }}
-														class="w-embed-youtubevideo youtube"
-													>
-														<iframe
-															src="https://www.youtube.com/embed/1YyAzVmP9xQ?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
-															frameborder="0"
-															style={{
-																position: 'absolute',
-																left: 0,
-																top: 0,
-																width: '100%',
-																height: '100%',
-																pointerEvents: ' auto',
-															}}
-															allow="autoplay; encrypted-media"
-															allowfullscreen=""
-															title="What is Cryptocurrency?"
-														></iframe>
-													</div>
-												</div>
-											</div>
-											<div class="slide-2 w-slide">
-												<div class="slide-content-wrapper">
-													<div
-														style={{ paddingTop: '56.17021276595745%' }}
-														class="w-embed-youtubevideo youtube"
-													>
-														<iframe
-															src="https://www.youtube.com/embed/nHhAEkG1y2U?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
-															frameborder="0"
-															style={{
-																position: 'absolute',
-																left: 0,
-																top: 0,
-																width: '100%',
-																height: '100%',
-																pointerEvents: ' auto',
-															}}
-															allow="autoplay; encrypted-media"
-															allowfullscreen=""
-															title="What is Web 3.0?"
-														></iframe>
-													</div>
-												</div>
-											</div>
+											<a
+												class="carousel-control-prev"
+												href="#insightsCarousel"
+												role="button"
+												data-slide="prev"
+											>
+												<span
+													class="carousel-control-prev-icon"
+													aria-hidden="true"
+												></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a
+												class="carousel-control-next"
+												href="#insightsCarousel"
+												role="button"
+												data-slide="next"
+											>
+												<span
+													class="carousel-control-next-icon"
+													aria-hidden="true"
+												></span>
+												<span class="sr-only">Next</span>
+											</a>
 										</div>
-										<div class="slider-left-arrow w-slider-arrow-left">
-											<div class="slider-icon w-icon-slider-left"></div>
-										</div>
-										<div class="slider-right-arrow w-slider-arrow-right">
-											<div class="slider-icon w-icon-slider-right"></div>
-										</div>
-										<div class="slide-nav-2 w-slider-nav w-round"></div>
 									</div>
 								</div>
-							</div>
-						</div>
+							}
+						/>
 					</section>
-					<section id="contact"></section>
-					<HeroDivider />
+					<div className="d-example-divider"></div>
+					<section id="contact">
+						<SectionHead2 sectionTitle="Contact Us" />
+						<Footer />
+					</section>
 				</div>
 			</div>
 		</>
