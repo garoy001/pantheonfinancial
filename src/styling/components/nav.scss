@@ -61,7 +61,7 @@ nav {
 		position: relative;
 	}
 	.nav-link-box {
-		margin-top: 36px;
+		margin-top: 50px;
 		margin-right: 0;
 		font-size: 14px;
 		right: 0;
@@ -82,6 +82,27 @@ nav {
 			&:hover {
 				outline: 0;
 			}
+		}
+	}
+	@media (max-width: 1086px) and (min-width: 989px) {
+		.login-btn {
+			margin-right: 1.5rem !important;
+		}
+		#contact_link {
+			display: none;
+		}
+	}
+	@media (max-width: 988px) {
+		.navbar-nav {
+			margin-top: 5rem;
+		}
+		.navbar-collapse {
+			position: absolute;
+			top: -60px;
+			right: 30px;
+		}
+		.login-btn {
+			margin-right: 0 !important;
 		}
 	}
 	.navbar-brand {
