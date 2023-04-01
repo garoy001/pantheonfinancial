@@ -84,6 +84,13 @@ nav {
 			}
 		}
 	}
+	.navbar-brand {
+		&:hover {
+			cursor: pointer;
+			opacity: 0.8;
+		}
+		z-index: 30;
+	}
 	.nav-link-text {
 		&:hover {
 			color: #535252 !important;
