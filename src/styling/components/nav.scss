@@ -98,6 +98,8 @@ nav {
 		}
 		.navbar-toggler {
 			z-index: 30;
+			margin-top: 0 !important;
+			top: 50px;
 		}
 		.navbar-collapse {
 			position: absolute;
@@ -105,6 +107,7 @@ nav {
 			width: 100%;
 			top: -70px;
 			padding-bottom: 3rem;
+
 			li {
 			}
 		}
