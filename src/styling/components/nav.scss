@@ -96,10 +96,17 @@ nav {
 		.navbar-nav {
 			margin-top: 5rem;
 		}
+		.navbar-toggler {
+			z-index: 30;
+		}
 		.navbar-collapse {
 			position: absolute;
-			top: -60px;
-			right: 30px;
+			background-color: rgba(0, 0, 0, 0.8);
+			width: 100%;
+			top: -70px;
+			padding-bottom: 3rem;
+			li {
+			}
 		}
 		.login-btn {
 			margin-right: 0 !important;
